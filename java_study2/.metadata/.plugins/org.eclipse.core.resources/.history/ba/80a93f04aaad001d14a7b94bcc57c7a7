@@ -1,0 +1,22 @@
+package javaHeight05.ex04;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class ComparableEx04 {
+
+	public static void main(String[] args) {
+		TreeSet<Person> ts  = new TreeSet<Person>();
+        ts.add( new Person("홍길동", 45) );
+        ts.add( new Person("감자바", 25) );
+        ts.add( new Person("박지원", 31));
+        
+        Iterator<Person> it=ts.iterator();
+        while( it.hasNext() ) {
+        	Person p = it.next();
+        	System.out.println( p.getName() + " - " + p.getAge() );
+        }
+        
+	}
+
+}

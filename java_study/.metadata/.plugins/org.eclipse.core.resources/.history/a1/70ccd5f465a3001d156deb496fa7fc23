@@ -1,0 +1,9 @@
+package javaMid6.p376;
+
+public class AA implements A{
+    @Override
+    public void d() {
+    	// TODO Auto-generated method stub
+    	A.super.d();
+    }
+}

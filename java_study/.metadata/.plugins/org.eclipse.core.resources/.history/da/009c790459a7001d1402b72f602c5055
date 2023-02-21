@@ -1,0 +1,16 @@
+package javaMid10.p468;
+
+public class A {
+   void a1() {
+	   a2();
+   }
+   void a2() {
+	   a3();
+   }
+   void a3() throws ArithmeticException {
+		 
+	        int a=10/0;
+	  
+	  
+   }
+}

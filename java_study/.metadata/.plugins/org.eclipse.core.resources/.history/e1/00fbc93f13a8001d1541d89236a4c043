@@ -1,0 +1,29 @@
+package javaMid11.toeic;
+
+import java.util.Scanner;
+
+public class Toeic {
+    int toeicScore; //토익점수
+    Scanner sc = new Scanner(System.in);
+    boolean flag=true;
+    String continueVal;
+    void input() throws ScoreMinException, ScoreMaxException {
+        while( flag ) {
+        	System.out.print("당신의 토익점수는?");
+        	toeicScore = sc.nextInt();
+        	if( toeicScore < 0) {
+        		throw new ScoreMinException( "0점 미만 토익점수는 나올 수 없습니다. 다시 입력하세요");
+        	}else if( toeicScore > 990) {
+        		throw new ScoreMaxException( "990점 초과 토익점수는 나올 수 없습니다. 다시 입력하세요");
+        	}else {
+        		System.out.println("당신의 토익점수는 " + toeicScore + "점입니다");
+        	}
+        	sc.nextLine();
+        	System.out.print("계속 하시겠습니까?(y/n)");
+        	continueVal = sc.next();
+        	if(continueVal.equalsIgnoreCase("n")) flag = false;
+        }
+    }
+    
+    
+}

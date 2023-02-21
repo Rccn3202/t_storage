@@ -1,0 +1,14 @@
+package javaMid6.p376;
+
+public class Driver {
+	
+   void driver(Vehicle vehicle) {
+	   vehicle.run();
+   }
+	
+	public void fare(Vehicle vechicle) {
+		// TODO Auto-generated method stub
+		
+	}
+   
+}

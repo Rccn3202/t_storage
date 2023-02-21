@@ -1,0 +1,14 @@
+package javaMid7.blog2265;
+
+public class AnnonyEx {
+
+	public static void main(String[] args) {
+	
+        CalculatorBusiness cb = new CalculatorBusiness();
+        cb.input();
+        cb.print();
+        
+        
+	}
+
+}

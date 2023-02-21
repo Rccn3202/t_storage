@@ -1,0 +1,21 @@
+package javaMid6.p395;
+
+public class A {
+    
+	class B{ 
+		public B() {
+			System.out.println("B클래스의 기본생성자");
+		}
+	};
+    
+	// B field = new B();
+	
+    A(){
+    	System.out.println("A클래스의 기본생성자");
+    	B b = new B();
+    }
+    
+    void method() {
+    	B b = new B();
+    }
+}

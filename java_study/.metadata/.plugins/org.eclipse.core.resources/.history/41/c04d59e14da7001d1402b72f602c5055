@@ -1,0 +1,10 @@
+package javaMid10.p464;
+
+public class ExceptionEx01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

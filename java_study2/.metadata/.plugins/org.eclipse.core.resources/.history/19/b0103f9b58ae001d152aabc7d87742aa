@@ -1,0 +1,8 @@
+package javaHeight05.ex05;
+
+public class Fruit {
+   private String name;
+   private Integer price;
+   
+   
+}

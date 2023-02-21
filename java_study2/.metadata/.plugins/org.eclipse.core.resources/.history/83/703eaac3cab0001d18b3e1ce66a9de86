@@ -1,0 +1,8 @@
+package javaHeight05.ex13;
+
+public class Student {
+    private int StudentNum;
+    private String name;
+    
+    
+}

@@ -1,0 +1,23 @@
+package javaMid10.p466;
+
+
+public class ExceptionEx03 {
+
+	public static void main(String[] args) {
+		try {
+		     Class.forName("java.lang.String");
+		     int a=10 / 0;
+		     
+		} catch( ClassNotFoundException e) {
+			System.out.println( "class에 대한 에러입니다. ");
+			
+		} catch( ArithmeticException e) {
+			System.out.println(  "수학적으로 잘못된 에러입니다. " );
+		
+		} finally {
+			System.out.println("정상 종료하기");
+		}
+		 
+	}
+
+}

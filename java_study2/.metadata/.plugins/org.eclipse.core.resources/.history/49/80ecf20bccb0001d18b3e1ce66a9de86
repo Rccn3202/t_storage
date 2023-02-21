@@ -1,0 +1,26 @@
+package javaHeight05.ex13;
+
+public class Student {
+    private int StudentNum;
+    private String name;
+    
+	public Student(int studentNum, String name) {
+		super();
+		StudentNum = studentNum;
+		this.name = name;
+	}
+	public int getStudentNum() {
+		return StudentNum;
+	}
+	public void setStudentNum(int studentNum) {
+		StudentNum = studentNum;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+    
+    
+}

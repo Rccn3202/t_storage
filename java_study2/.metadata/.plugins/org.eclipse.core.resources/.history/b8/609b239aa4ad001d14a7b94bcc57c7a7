@@ -1,0 +1,22 @@
+package javaHeight05.ex03;
+
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class TreeMapEx03 {
+
+	public static void main(String[] args) {
+		TreeMap<String, String> tm = new TreeMap<String, String>();
+        tm.put("영업부", "강정호");
+        tm.put("홍보부", "김강인");
+        tm.put("기획부", "김영자");
+        
+        //출력하기
+        Set< Entry<String, String> > et = tm.entrySet();
+        for( Entry<String, String> e : et) {
+        	System.out.println( e.getKey() + " - " + e.getValue() );
+        }
+	}
+
+}

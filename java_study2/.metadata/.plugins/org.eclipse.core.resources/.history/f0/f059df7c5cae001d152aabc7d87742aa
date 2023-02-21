@@ -1,0 +1,8 @@
+package javaHeight05.ex06;
+
+public class Movie {
+   private String movieName;
+   private Integer ticketing;
+   
+   
+}

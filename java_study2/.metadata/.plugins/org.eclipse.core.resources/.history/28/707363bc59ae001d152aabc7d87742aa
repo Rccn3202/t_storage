@@ -1,0 +1,8 @@
+package javaHeight05.ex05;
+
+import java.util.Comparator;
+
+public class FruitComparator implements Comparator<Fruit>{
+
+	 
+}

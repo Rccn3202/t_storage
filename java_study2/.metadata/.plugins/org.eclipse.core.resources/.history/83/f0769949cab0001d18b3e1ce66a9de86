@@ -1,0 +1,10 @@
+package javaHeight05.ex13;
+
+public class HashSetEx {
+
+	public static void main(String[] args) {
+		// 연습문제 8
+
+	}
+
+}

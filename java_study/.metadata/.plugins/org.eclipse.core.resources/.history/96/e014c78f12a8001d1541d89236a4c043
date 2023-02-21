@@ -1,0 +1,10 @@
+package javaMid11.toeic;
+
+public class ToeicExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

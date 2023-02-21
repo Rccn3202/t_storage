@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;RefEx01.java&apos; to &apos;javaBasic2/src/javaBasic2.ch05&apos;&#x0D;&#x0A;- Original project: &apos;javaBasic2&apos;&#x0D;&#x0A;- Destination element: &apos;javaBasic2/src/javaBasic2.ch05&apos;&#x0D;&#x0A;- Original element: &apos;javaBasic2.ch05.RefEx01.java&apos;" description="Copy compilation unit" destination="/src&lt;javaBasic2.ch05" element1="/src&lt;javaBasic2.ch05{RefEx01.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1673492785176" units="1" version="1.0"/>
+</session>

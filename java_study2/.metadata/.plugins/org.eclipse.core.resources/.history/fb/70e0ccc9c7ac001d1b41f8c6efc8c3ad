@@ -1,0 +1,10 @@
+package javaHeight4.p659;
+
+public class Data1 {
+	
+   private Shop shop;	
+   private int point;
+   private String address;
+   
+   
+}

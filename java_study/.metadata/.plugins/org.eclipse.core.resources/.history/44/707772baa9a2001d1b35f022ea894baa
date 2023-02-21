@@ -1,0 +1,78 @@
+package javaMid5.blog1331;
+
+import java.util.Scanner;
+
+public class SungJukBusiness {
+   //입력받기
+	 void input(SungJuk sj) {
+	 
+		 Scanner sc = new Scanner(System.in);
+		 System.out.print("과목명은?");
+		 sj.setSubject(  sc.next() );
+		 sc.nextLine();
+		 System.out.println("시험점수 입력하세요");
+		 System.out.print("중간고사?");
+		 sj.setMidtermExam( sc.nextInt() );
+		 sc.nextLine(); //입력하고 엔터 부분 처리
+		 System.out.print("기말고사?");
+		 sj.setFinals( sc.nextInt() );
+		 sc.nextLine(); //입력하고 엔터 부분 처리
+		 System.out.print("수행평가?");
+		 sj.setPerformanceEvalution( sc.nextInt() );
+		 sc.nextLine(); //입력하고 엔터 부분 처리
+          
+		 if(sj instanceof ElementaryStudent ) {
+			 calc( sj );
+		 } else if( sj instanceof MiddleSchooler) {
+			 MiddleSchooler ms = (MiddleSchooler) sj;
+			 System.out.print("담당교사?");
+			 ms.setTeacher( sc.next() );
+			 sc.nextLine(); //입력하고 엔터 부분 처리 
+			
+			 System.out.print("출석점수?");
+			 ms.setAttendance( sc.nextInt() );
+			 sc.nextLine(); //입력하고 엔터 부분 처리
+			 
+			 System.out.print("봉사점수?");
+			 ms.setServie( sc.nextInt() );
+			 sc.nextLine(); //입력하고 엔터 부분 처리
+			 
+			 calc( ms );  
+		 } else if(sj instanceof HighSchoolStudent) {
+			 HighSchoolStudent hs = (HighSchoolStudent) sj;
+			 System.out.print("담당교사?");
+			 hs.setTeacher( sc.next() );
+			 sc.nextLine(); //입력하고 엔터 부분 처리 
+			
+			 System.out.print("출석점수?");
+			 hs.setAttendance( sc.nextInt() );
+			 sc.nextLine(); //입력하고 엔터 부분 처리
+			 
+			 System.out.print("봉사점수?");
+			 hs.setServie( sc.nextInt() );
+			 sc.nextLine(); //입력하고 엔터 부분 처리
+			 
+			 calc( hs );   
+		 }
+		 
+    }
+   //출력받기
+	 void print(SungJuk e1) {
+		 e1.printAll();
+	 }
+   //점수계산
+	 void calc(SungJuk e1) {
+		 System.out.println( e1 );
+		 if( e1 instanceof ElementaryStudent) {
+		   e1.setScore( e1.getMidtermExam() + e1.getFinals() + e1.getPerformanceEvalution() );
+		 } else if( e1 instanceof MiddleSchooler ) {
+			MiddleSchooler ms = (MiddleSchooler) e1; 
+		    ms.setScore( ms.getMidtermExam() + ms.getFinals() + ms.getPerformanceEvalution()  + ms.getAttendance() + ms.getServie() );
+		 } else if( e1 instanceof HighSchoolStudent ) {
+			HighSchoolStudent hs = (HighSchoolStudent) e1; 
+		    hs.setScore( hs.getMidtermExam() + hs.getFinals() + hs.getPerformanceEvalution()  + hs.getAttendance() + hs.getServie() );
+		    System.out.println( hs.getScore() + "~~~~"); 
+		    hs.setStandardDeviation( hs.getScore() * 0.253 ); //임의(0.253)로 표준편차 구하기 
+		 }    
+	 }
+}

@@ -1,0 +1,12 @@
+package javaMid10.p465;
+
+public class ExceptionEx02 {
+
+	public static void main(String[] args) {
+		
+		int[] number = {10,20,30,40,50};
+		
+		System.out.println(number[4]);
+	}
+
+}

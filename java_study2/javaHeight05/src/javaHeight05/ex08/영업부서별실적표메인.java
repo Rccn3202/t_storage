@@ -1,0 +1,29 @@
+package javaHeight05.ex08;
+
+import java.util.Iterator;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class 영업부서별실적표메인 {
+
+	public static void main(String[] args) {
+		TreeMap< 부서명소속, 소속매장위치판매실적  > tm=new TreeMap< 부서명소속, 소속매장위치판매실적  >( new 부서명소속Comparator() );
+
+		tm.put(  new 부서명소속("서울본부", "강북영업"), new 소속매장위치판매실적("서울본부","백화점", 4460) ) ;
+		tm.put(  new 부서명소속("경인본부", "강서영업"), new 소속매장위치판매실적("서울본부","쇼핑몰", 6800) ) ;
+		tm.put(  new 부서명소속("강원본부", "강남영업"), new 소속매장위치판매실적("서울본부","백화점", 5580) ) ;
+		tm.put(  new 부서명소속("제주본부", "강동영업"), new 소속매장위치판매실적("서울본부","쇼핑몰", 3560) ) ;
+		
+		//전체 출력하기
+		System.out.println( tm.size() );
+		
+		Set<부서명소속> a1 = tm.keySet();
+		for( 부서명소속 a : a1) {
+			System.out.println(a.get부서명()  + " " + a.get소속() +" "+  tm.get(a).get소속() +" "+  tm.get(a).get매장위치() + " "+ tm.get(a).get판매실적());
+		}
+		
+		
+		
+	}
+
+}

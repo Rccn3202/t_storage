@@ -1,0 +1,40 @@
+package javaHeight05.ex15;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.TreeSet;
+
+public class TreeSetEx {
+
+	public static void main(String[] args) {
+		TreeSet<Student> treeSet = new TreeSet<Student>();
+		
+		treeSet.add(new Student("blue", 96));
+		treeSet.add(new Student("hong", 86));
+		treeSet.add(new Student("white", 92));
+
+		Student student = treeSet.last();
+		System.out.println("최고점수 : " + student.getScore());
+		System.out.println("최고 점수를 받은 아이디 : " + student.getId());
+
+        TreeSet<Student2> treeSet2 = new TreeSet<Student2>(  new Student2Comparator() );
+		
+		treeSet2.add(new Student2("blue", 96));
+		treeSet2.add(new Student2("hong", 86));
+		treeSet2.add(new Student2("white", 92));
+
+		Student2 student2 = treeSet2.first();
+		System.out.println("최저점수 : " + student2.getScore());
+		System.out.println("최저 점수를 받은 아이디 : " + student2.getId());
+		
+		int[] a = new int[5];
+		a[0]=10;
+		
+		int[] a2 = {1,2,3};
+		
+		// a2배열을 리스트 넣어줘
+		List<int[]> list = new ArrayList<int[]>();
+		list.add( a2[0]);
+		
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;javaMid10.p480.InsufficienEx.java&apos; to &apos;InsufficientException.java&apos;&#x0D;&#x0A;- Original project: &apos;javaMid10&apos;&#x0D;&#x0A;- Original element: &apos;javaMid10.p480.InsufficienEx.java&apos;&#x0D;&#x0A;- Renamed element: &apos;javaMid10.p480.InsufficientException.java&apos;" description="Rename compilation unit &apos;InsufficienEx.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;javaMid10.p480{InsufficienEx.java" name="InsufficientException.java" references="false" stamp="1675826967509" version="1.0"/>
+</session>

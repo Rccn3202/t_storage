@@ -1,0 +1,15 @@
+package javaMid10.p468;
+
+public class ExceptionEx5 {
+
+	public static void main(String[] args) {
+		try {
+		      A a = new A();
+		      a.a1();
+		    } catch (ArithmeticException e) {
+		    	System.out.println("수학적으로 틀림" + e.getMessage() );
+		    }
+         
+	}
+
+}

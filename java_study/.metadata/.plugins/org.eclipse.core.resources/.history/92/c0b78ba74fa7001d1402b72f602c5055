@@ -1,0 +1,21 @@
+package javaMid10.p464;
+
+public class ExceptionEx01 {
+
+	public static void main(String[] args) {
+		try {
+		   System.out.println( 10/0 );
+		   //예외가 발생할 만한 코드 작성
+		}catch( ArithmeticException  e ) {
+		 //예외가 발생하면 처리할 코드 작성
+			System.out.println( e.getMessage());
+			System.out.println("예외가 발생했다.");
+		}finally {
+			//예외와 상관없이 무조건 처리되는 코드작성
+			System.out.println("데이터베이스 닫기/ 종료하기");
+		}
+		  
+		  
+	}
+
+}

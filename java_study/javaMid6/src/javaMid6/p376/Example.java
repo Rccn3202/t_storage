@@ -1,0 +1,23 @@
+package javaMid6.p376;
+
+public class Example {
+
+	public static void main(String[] args) {
+		action(new B());
+		action(new C());
+
+	}
+
+	private static void action(A a) {
+		//System.out.println("!!!!");
+		a.method1();
+		if( a instanceof C) {
+			C c  = (C) a;
+		//	System.out.println("@@@@@");
+			c.method2();
+		//	System.out.println("#####");
+		}
+		
+	}
+
+}

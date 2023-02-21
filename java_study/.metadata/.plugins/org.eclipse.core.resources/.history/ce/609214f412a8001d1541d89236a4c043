@@ -1,0 +1,11 @@
+package javaMid11.toeic;
+
+public class ToeicExample {
+
+	public static void main(String[] args) {
+		
+		Toeic toeic = new Toeic();
+		toeic.input();
+
+	}
+}

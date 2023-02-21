@@ -1,0 +1,9 @@
+package javaMid6.p376;
+
+public class Driver {
+	
+   void driver(Vehicle vehicle) {
+	   vehicle.run();
+   }
+   
+}

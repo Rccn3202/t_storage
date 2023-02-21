@@ -1,0 +1,13 @@
+package javaMid10.p466;
+
+import java.io.File;
+
+public class ExceptionEx03 {
+
+	public static void main(String[] args) {
+		File file1 = new File("c:/qqqqq/aa.txt");
+		
+        System.out.println( file1.exists() );
+	}
+
+}

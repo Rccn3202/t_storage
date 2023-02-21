@@ -1,0 +1,17 @@
+package javaMid7.blog2265;
+
+public class Calculator {
+    int width;
+    int height;
+    
+    
+    
+    void calc() { 
+    	
+    };
+    void printA() {
+    	System.out.println("가로는 " + width);
+    	System.out.println("세로는 " + height);
+    }
+    
+}

@@ -1,0 +1,11 @@
+package javaMid7.blog2265;
+
+public class AnnonyEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        CalculatorBusiness cb = new CalculatorBusiness();
+        
+	}
+
+}

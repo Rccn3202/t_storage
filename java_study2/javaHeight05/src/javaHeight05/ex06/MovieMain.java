@@ -1,0 +1,20 @@
+package javaHeight05.ex06;
+
+import java.util.TreeSet;
+
+public class MovieMain {
+
+	public static void main(String[] args) {
+		
+		TreeSet<Movie> movieTree = new TreeSet<Movie>(  new MovieComparator()   );
+		
+		movieTree.add( new Movie( "조커", 12405));
+		movieTree.add( new Movie( "알라딘", 25100));
+		movieTree.add( new Movie( "남산의부장들", 11478));
+		movieTree.add( new Movie( "극한직업", 30100));
+		movieTree.add( new Movie( "기생충", 33542));
+		
+       
+	}
+
+}

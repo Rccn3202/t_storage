@@ -1,0 +1,12 @@
+package pack1;
+
+import pack2.B;
+
+public class A {
+   public void method() {
+	   System.out.println("A-method½ÇÇà");
+	   
+	   B b = new B();
+	   b.method();
+   }
+}

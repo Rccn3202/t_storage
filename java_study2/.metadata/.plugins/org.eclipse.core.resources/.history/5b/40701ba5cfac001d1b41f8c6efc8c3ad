@@ -1,0 +1,9 @@
+package javaHeight4.p660;
+
+public class School {
+    
+	private String teacherName;
+    private Data2 data2;
+    
+    
+}

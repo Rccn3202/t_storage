@@ -1,0 +1,5 @@
+package javaMid11.q7;
+
+public class WrongPasswordException {
+
+}

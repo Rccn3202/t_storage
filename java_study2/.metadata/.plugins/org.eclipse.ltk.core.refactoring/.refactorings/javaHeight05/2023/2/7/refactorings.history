@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;javaHeight05.ex08.부소명소속&apos; to &apos;부서명소속&apos;&#x0D;&#x0A;- Original project: &apos;javaHeight05&apos;&#x0D;&#x0A;- Original element: &apos;javaHeight05.ex08.부소명소속&apos;&#x0D;&#x0A;- Renamed element: &apos;javaHeight05.ex08.부서명소속&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;부소명소속&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;javaHeight05.ex08{부소명소속.java[부소명소속" matchStrategy="1" name="부서명소속" qualified="false" references="true" similarDeclarations="false" stamp="1676598758843" textual="false" version="1.0"/>
+</session>

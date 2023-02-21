@@ -1,0 +1,10 @@
+package javaMid7.blog2265;
+
+import java.util.Scanner;
+
+public class CalculatorBusiness {
+    void input() {
+    	Scanner sc = new Scanner(System.in);
+    	System.out.print( "°¡·Î´Â " + sc.);
+    }
+}

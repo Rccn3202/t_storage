@@ -1,0 +1,27 @@
+package javaMid7.blog2265;
+
+import java.util.Scanner;
+
+public class CalculatorBusiness {
+	Calculator ca = new Calculator();
+	CalculatorBusiness cb = new CalculatorBusiness();
+	
+    void input() {
+    	Scanner sc = new Scanner(System.in);
+    	System.out.print( "가로는 " );
+    	ca.setWidth( sc.nextInt() );
+    	System.out.print( "세로는 " );
+    	ca.setHeight( sc.nextInt() );
+    }
+    void print() {
+    	ca.printA();
+    }
+     
+    Calculator ca1 = new Calculator() {
+    	@Override
+    	void calc() {
+    		
+    	}
+    	
+    }; 
+}

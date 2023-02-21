@@ -1,0 +1,11 @@
+package javaMid10.p464;
+
+public class ExceptionEx01 {
+
+	public static void main(String[] args) {
+		  System.out.println( 10/0 );
+		  System.out.println("데이터베이스 닫기/ 종료하기");
+		  
+	}
+
+}

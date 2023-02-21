@@ -1,0 +1,27 @@
+package javaMid6.p395;
+
+public class OA1 {
+    int a=10;
+    static int sa=20;
+    
+    void m1() {
+    	a=a+20;
+    	sa = sa + 10;
+    }
+    static void sm1() { 
+    	//a = a+ 20; 사용 못함
+    	sa = sa + 10;
+    }
+    
+    public OA1() {
+		a=a+10;
+		sa = sa+20;
+		m1();
+		sm1();
+	}
+    
+    
+    
+    
+    
+}

@@ -1,0 +1,31 @@
+package javaMid7.blog2265;
+
+import java.util.Scanner;
+
+public class CalculatorBusiness {
+	Calculator ca = new Calculator();
+	Scanner sc;
+	
+    void input() {
+    	sc = new Scanner(System.in);
+    	System.out.print( "가로는 " );
+    	ca.setWidth( sc.nextInt() );
+    	System.out.print( "세로는 " );
+    	ca.setHeight( sc.nextInt() );
+    }
+    void print() {
+    	ca.printA();
+    }
+     //익명 자식객체 구현
+    Calculator ca1 = new Calculator() {
+    	@Override
+    	void calc() {
+    		input();
+    		int result;
+    		result = ca.getWidth() * ca.getHeight();
+    		print();
+    		System.out.println("넓이는 " + result );
+    	}
+    	
+    }; 
+}
