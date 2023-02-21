@@ -1,0 +1,32 @@
+package javaCh12.ex04;
+
+import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
+
+public class BasePage519 {
+
+	public static void main(String[] args) throws UnsupportedEncodingException {
+		String data="ÀÚ¹Ù";
+		byte[] arr1 = data.getBytes("UTF-8");
+		System.out.println(arr1[0]);
+		System.out.println(arr1[1]);
+		System.out.println(arr1[2]);
+		System.out.println(arr1[3]);
+		System.out.println(arr1[4]);
+		System.out.println(arr1[5]);
+		
+	    System.out.println( Arrays.toString(arr1) );
+        
+	    String str1 = new String( arr1, "euc-kr" );
+	    System.out.println( str1 );
+	    
+	    byte[] arr2 = data.getBytes("EUC-KR");
+	    System.out.println( Arrays.toString(arr2));
+	    
+	    String str2 = new String(arr2, "EUC-KR");
+	    System.out.println( str2 );
+	    
+	    
+	}
+
+}

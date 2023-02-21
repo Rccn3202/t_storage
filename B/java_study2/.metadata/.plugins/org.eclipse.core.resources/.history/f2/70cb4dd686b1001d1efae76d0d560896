@@ -1,0 +1,18 @@
+package javaCh12.ex02;
+
+public class BaseEx02 {
+
+	public static void main(String[] args) {
+		long startTime = System.nanoTime();
+		System.out.println( startTime);
+		
+		int sum=0;
+		for( long i=1; i<=1000000000L; i++) {
+			sum += i;
+		}
+		long endTime = System.nanoTime();
+		System.out.println( endTime);
+		System.out.println( "1~100000000까지의 합을 구하는데 걸린 시간은? " + ( ( endTime - startTime ) / 1000000000 ) + "초" );
+	}
+
+}

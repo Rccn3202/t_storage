@@ -1,0 +1,14 @@
+package javaCh12.ex04;
+
+import java.util.Arrays;
+
+public class BasePage519 {
+
+	public static void main(String[] args) {
+		String data="ÀÚ¹Ù";
+		byte[] arr1 = data.getBytes();
+	    System.out.println( Arrays.toString(arr1) );
+        
+	}
+
+}

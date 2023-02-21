@@ -1,0 +1,10 @@
+package javaCh12.ex01;
+
+public class BaseEx01 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

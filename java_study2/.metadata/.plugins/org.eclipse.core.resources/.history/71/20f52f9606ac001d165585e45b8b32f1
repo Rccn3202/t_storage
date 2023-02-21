@@ -1,9 +1,0 @@
-package javaHeight03.p652;
-
-public class Shop {
-   private String custname;
-   private String custPhone;
-   private int point;
-   
-   
-}

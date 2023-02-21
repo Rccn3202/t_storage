@@ -1,0 +1,15 @@
+html{
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+}
+#data1{
+  margin-right: 20px;  
+  border-right: 20px;
+  padding-right: 60px;
+}
+#data2{
+    background-color: cadetblue;
+    margin: 50px 100px 150px 200px;
+}
